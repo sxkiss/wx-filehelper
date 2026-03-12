@@ -1,0 +1,43 @@
+{
+  "id": "wx-filehelper",
+  "name": "Wx FileHelper",
+  "description": "微信文件传输助手通信插件 - 支持文本与媒体接收发送",
+  "version": "0.1.0",
+  "channels": ["wx-filehelper"],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "enabled": { "type": "boolean" },
+      "name": { "type": "string" },
+      "baseUrl": { "type": "string" },
+      "requestTimeout": { "type": "number" },
+      "pollingTimeout": { "type": "number" },
+      "pollingLimit": { "type": "number" },
+      "pollingInterval": { "type": "number" },
+      "loginAutoPoll": { "type": "boolean" },
+      "loginCheckInterval": { "type": "number" },
+      "qrRefreshInterval": { "type": "number" },
+      "skipHistoryOnStart": { "type": "boolean" },
+      "startupSyncLimit": { "type": "number" },
+      "qrSavePath": { "type": "string" },
+      "mediaCacheDir": { "type": "string" },
+      "defaultChatId": { "type": "string" }
+    }
+  },
+  "uiHints": {
+    "baseUrl": { "label": "Base URL", "placeholder": "http://127.0.0.1:8000" },
+    "requestTimeout": { "label": "Request Timeout (ms)" },
+    "pollingTimeout": { "label": "Polling Timeout (s)" },
+    "pollingLimit": { "label": "Polling Limit" },
+    "pollingInterval": { "label": "Polling Interval (ms)" },
+    "loginAutoPoll": { "label": "Login Auto Poll" },
+    "loginCheckInterval": { "label": "Login Check Interval (ms)" },
+    "qrRefreshInterval": { "label": "QR Refresh Interval (ms)" },
+    "skipHistoryOnStart": { "label": "Skip History On Start" },
+    "startupSyncLimit": { "label": "Startup Sync Limit" },
+    "qrSavePath": { "label": "QR Save Path" },
+    "mediaCacheDir": { "label": "Media Cache Dir" },
+    "defaultChatId": { "label": "Default Chat ID" }
+  }
+}
