@@ -8,14 +8,14 @@
 ## 安装
 
 ```bash
-cd /home/sxkiss/.openclaw/extensions/wx-filehelper
+cd ~/.openclaw/extensions/wx-filehelper
 npm install
 npm run build
 ```
 
 ## 配置
 
-在 `/home/sxkiss/.openclaw/openclaw.json` 中添加：
+在 `~/.openclaw/openclaw.json` 中添加：
 
 ```json
 {
@@ -46,7 +46,7 @@ npm run build
     },
     "load": {
       "paths": [
-        "/home/sxkiss/.openclaw/extensions"
+        "~/.openclaw/extensions"
       ]
     }
   }
